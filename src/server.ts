@@ -3,7 +3,7 @@ import routes from './routes';
 
 const api = express();
 
-api.use(api.json());
+api.use(express.json());
 api.use(routes);
 
 api.listen(3333, () => {
