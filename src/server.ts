@@ -1,8 +1,10 @@
 import express from 'express';
+import cookieParsr from 'cookie-parser';
 import routes from './routes';
 
 const api = express();
 
+api.use(cookieParsr());
 api.use(express.json());
 api.use(routes);
 
